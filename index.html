@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Element Coffee</title>
+    <meta name="description" content="Element Coffee - from production to cup">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Include Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Include jQuery-->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $('.preloader lds-ellipsis').delay(100).fadeOut('slow', function () {
+                $('.preloader').hide();
+            });
+            setTimeout(function () {
+                console.log('here')
+                $('.preloader').fadeOut('slow', function () {
+                    $('.preloader').remove();
+                });
+            }, 333);
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <main>
+        <div class="content align-items-center">
+            <div class="intro">
+                <img src="images/logo.png" alt="Element Kopi" />
+                <p>
+                    from production to cup
+                </p>
+                <p>
+                    ...Opening soon
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-right px-3 py-3">
+            Kopi Tabing, Padang, Indonesia
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
